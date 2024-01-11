@@ -1,0 +1,797 @@
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+section:nth-child(1){
+    
+    border: 0px solid;
+    padding: 10px 10px;
+    background-color: #1a73e9;
+    display: inline-flex;
+    width: 100%;
+    
+}
+section:nth-child(1) div{
+    border: 0px solid black;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ section:nth-child(1) i:hover{
+    color: #ddebfc;
+    cursor: pointer;
+ }
+ #bar_bg{
+    margin-left: 0px;
+ }
+ #name_bg{
+    margin-left: 20px;
+ }
+ #search-bg{
+    width: 30%;
+    border: 0px solid;
+    margin-left: 510px;
+}
+    #search-bg div{
+        opacity: 0.8;
+        background-color: rgb(118, 143, 228);
+        width: 260px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 0px;    
+        padding-top: 0px;
+        
+        
+    }
+    #search-bg input{
+        margin-right: 0px;    
+        background-color: white;
+    }
+    #search-bg div:hover{
+        opacity: 1;
+    }
+    
+    #search-bg div input{
+
+        width: 210px;
+        border: 0px solid;
+        font-size: 18px;
+        outline: none;
+        background-color: rgb(241, 232, 239);
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #search-bg div i{
+        font-size: 20px;    
+        color: black;
+    }
+
+#notification_bg{
+    margin-left: 80%;
+    visibility: hidden;
+}
+#dot_bar_bg{
+    margin-left: 60px;
+}
+
+#dot_bar_items_back{
+ border: 0px solid;    
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+ bottom: 0px;
+ /* background-color: rgb(209, 205, 205); */
+ /* opacity: 0.2; */
+ display: none;
+}
+#dot_bar_items{
+    border: 1px solid;
+    position: absolute;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    top: 60px;
+    right: 90px;
+    display: none;
+    box-shadow: 0px 25px 30px rgba(104, 103, 103, 0.575);
+}
+
+
+#dot_bar_items div{
+    border: 1px solid rgb(235, 235, 235);
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#dot_bar_items div:hover{
+    background-color: rgb(226, 225, 225);
+    border-color: rgb(226, 225, 225);
+}
+
+section:nth-child(2){
+    display: none;
+    animation-name: opa;
+    animation-duration: 1s;
+}
+
+#section2_bg{
+    height: 800px;
+    background-color: rgb(213, 234, 236);
+    display: inline-flex;
+    padding: 40px;
+    width: 96%;
+}
+#leftImage{
+    background-image: url("/images/Screenshot\ 2023-11-06\ 221431.png");
+    background-repeat: no-repeat;
+    background-size: 103%;
+    background-position: -10px 44%;
+    /* background-blend-mode:color; */
+    background-color: #3c444c;
+    box-shadow: 0px 0px 40px rgb(173, 173, 173) !important;
+    width: 30%;
+    display: none;
+}
+
+#body_bg{
+    border: 0px solid;
+    width: 70%;
+    display: none;
+    /* margin-left: 350px; */
+    background-color: white;
+    
+    box-shadow: 20px 10px 30px rgb(173, 173, 173);
+
+}
+
+
+#image_bg{
+    height: 300px;    
+    border: 0px solid;
+    background-image: url("/images/Screenshot\ 2023-11-06\ 221431.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 50% -90px;
+/* background-blend-mode:color;  */
+    background-color: #3c444c;
+    border-radius: 50px;
+    animation-name: scroll_down;
+    animation-duration: 2s;
+    overflow: hidden;
+}
+
+#content{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+    margin-left: 13%;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 400px;
+    animation-name: scroll_down;
+    animation-duration: 2s;
+    
+    overflow: hidden;
+}
+@keyframes scroll_down {
+    from{height: 0px;}
+}
+
+
+#content h1:nth-child(1){
+    margin-top: 0px;
+}
+ul{
+    margin-left: 38%;
+    text-align: left;
+}
+li{
+    margin-left: 0px;
+}
+#home_content{
+    display: block;
+    align-items: center;
+    overflow: scroll;
+    height: 885px;
+}
+
+
+#Registration,#Login{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: linear-gradient(to top,rgb(226, 168, 168),rgb(224, 191, 191),rgb(141, 141, 236),rgb(101, 101, 212)); */
+    height: 550px;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    backdrop-filter: blur(600%);
+    display: none;
+    font-weight: 100;
+    color: rgb(63, 63, 63);
+}
+.head_name{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(180, 178, 178);
+    /* background-color: rgb(4, 43, 94); */
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin-top: 2%;
+}
+
+.input_bg,.Login_input_bg{
+    border: 0px solid;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 0px solid rgb(207, 205, 205);
+    
+}
+input{
+    font-size: 20px;
+    border: 1px solid rgb(153, 153, 153);
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 4px;
+    padding: 5px;
+    border-radius: 6px;
+    outline-offset: 0px;
+}
+input:hover{
+    outline: rgba(104, 180, 104, 0.616) solid 3px;
+}
+
+.input_bg button,#login_submit,#password_submit,#password_submit_login,.login_button{
+    border: 0px solid;
+    font-size: 25px;
+    background-color: #07499e;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+}
+.input_bg button:hover{
+    background-color: #05408d;
+}
+.input_bg button:active{
+    background-color: #1a73e9;
+}
+#Registration div:nth-child(4){
+    border: 0px solid;
+}
+i[for="lastName"]{
+    margin-left: 100px;
+    
+}
+i[name="School"]{
+    margin-left: 80px;
+}
+
+#refreshOne{
+    cursor: pointer;
+}
+#refreshTwo{
+    cursor: pointer;
+}
+
+#para,#para2,#para3{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    /* border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; */
+    color: rgb(182, 11, 11);
+    background-color: rgb(231, 242, 245);
+    height: 30px;
+    animation-name: para;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    /* font-weight: 600; */
+    font-weight: 502;
+    margin-top: 5px;
+    
+
+}
+@keyframes para {
+    from{font-size: 0;}
+}
+.otp{
+    visibility: visible;
+    width: 15px;
+    border: 2px solid rgba(2, 2, 87, 0.699);
+    box-shadow: 0 0 20px rgb(224, 224, 224);
+    
+}
+.otp:hover{
+    outline: none;
+}
+#otpSendOne,#otpSendTwo{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 30px;
+    font-size: 15px;
+    width: 80px;
+    padding: 5px 0px;
+}
+
+#phone_bg,#email_bg{
+    display: inline-flex;
+    justify-content: space-around;
+    border: 0px solid;
+    width: 100%;
+    
+}
+
+#phone_bg div:nth-child(1),#email_bg div:nth-child(1){
+    text-align: center;
+    border: 0px solid;
+    width: 50%;
+    
+    
+}
+#phone_bg div:nth-child(2),#email_bg div:nth-child(2){
+border: 0PX SOLID;
+width: 50%;
+text-align: left;
+/* border: 1px solid; */
+border: 0px solid;
+}
+#phoneDiv,#emailDiv{
+    display: none;
+    border: 1px solid;
+    height: 40px;
+    animation-name: expand;
+    animation-duration: 0.1s;
+    padding-top: 2px;
+    overflow: hidden;
+    overflow-x: hidden;
+   
+    
+}
+@keyframes expand {
+    from{width: 10%;}
+    to{}
+}
+
+
+#Login{
+display: block;    
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+
+#Login div{
+    color: rgb(53, 51, 51);
+}
+#Login div:nth-child(1){
+    color: rgb(0, 0, 0);
+}
+#login_phone{
+    margin-top: 20px;
+    padding-right: 25px;
+}
+
+.Login_input_bg{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 5px;
+}
+#login_submit{
+    font-size: 18px;
+    margin-top: 10px;
+}
+#Login  #password_name{
+    margin-top: 30px;
+    margin-right:40px;
+}
+
+
+#otpConformationOne,#otpConformationTwo{
+    color: green;
+    display: none;
+}
+
+#phoneNumber,#emailId{
+    outline: none;
+}
+
+#phone_bg_div_one{
+    margin-right: 155px;
+}
+#email_bg_div_one{
+    /* margin-right: 49px; */
+    margin-right: 100px;
+}
+
+#phone_bg #phoneOtpInput,#email_bg #emailOtpInput{
+
+    
+    border: 0px solid;
+    width: 100%;
+    display: none;
+}
+
+#otpConformOne,#otpConformTwo,#otpConformLogin{
+    border: 2px solid;
+    padding: 6px 9px ;
+    border-radius: 20px;
+    font-size:0px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#Login #useotp,#Login #back_to_password_login,#Login #back_to_password_nav{
+    margin-left: 185px;
+    color: #2269c7;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#Login #useotp{
+    visibility: visible;
+    color: white;
+    margin-left: 10px;
+}
+#Login #back_to_password_login,#Login #back_to_password_nav{
+    margin-left: 0px;
+    margin-right: 185px;
+    display: none;
+}
+#new_user{
+    font-size: 16px;
+    padding: 0px;
+    margin-right: 120px;
+    margin-top: 11px;
+}
+
+#new_user span{
+    color: rgb(78, 78, 204);
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+#login_type_password{
+    border: 0px solid;
+    display: none;
+}
+#login_type_otp{
+    border: 0px solid;
+    display: none;
+}
+
+#login_otp{
+    margin-left: 35px;
+}
+
+.Login_input_bg span{
+    color: #2b61a7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#resend,#loginOtpTimer{
+    margin-top: 14px;
+    display: none;
+}
+#resend span{
+    font-size: 16px;
+    margin-right: 190px;
+    cursor: pointer;
+}
+
+#Login_otp{
+    display: none;    
+}
+
+#phone_bg #refreshOne, #email_bg #refreshTwo{
+    display: none;
+    width: auto;
+    border: 0px solid;
+    padding-top: 5px;
+}
+#refreshOne i,#refreshTwo i,#refreshThree i{
+    
+    animation-name: rotate;
+    animation-duration: 2s;
+    margin-left: 20px;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transform: rotateZ(0deg);
+}
+
+@keyframes rotate {
+    from{transform: rotateZ(0deg);}
+    to{ transform: rotateZ(360deg);}
+}
+
+#password,#change_Password{
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+
+}
+#newPassword,#newPassword_login{
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+#confirmPassword,#confirmPassword_login{
+    margin-top: 24px;
+}
+#password_submit,#password_submit_login{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#refreshThree{
+    display: none;
+}
+
+#Wellcome{
+    display: none;
+}
+
+#logo{
+    background-image: url("/images/Screenshot\ 2023-11-06\ 221431.png");
+    background-repeat: no-repeat;
+    background-position: 50% ;
+    height: 500px;
+    animation-name: logo;
+    animation-duration: 3s;
+}
+@keyframes logo {
+    from{height: 0px;}
+}
+
+#forgetPassword{
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 150px;
+  
+}
+#loginOtpTimer{
+    display: block;
+}
+#PhoneOtpStatus{
+    border: 0px solid;
+}
+
+.timer_bg{
+    margin-top: 0px;
+    margin-right: 260px;
+    padding: 0px;
+    text-align: right;
+}
+#passwordIn{
+    padding-left:50px ;
+}
+#confirm{
+    margin-left: 40px;
+}
+#first_bg{
+    padding-left: 30px;
+}
+
+#mask{
+    position: absolute;
+    
+    width: 67.2%;
+    right: 37px;
+    top: 350px;
+    bottom: 50px;
+    
+    background-color: rgb(255, 255, 255);
+
+    transition: top 0.5s;
+     opacity: 0.7; 
+    display: none;
+
+}
+
+.login_button{
+        background-color: rgb(238, 133, 35);
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 40px rgb(192, 191, 191);
+}
+
+.login_button:hover{
+    background-color: rgb(192, 98, 10);
+    box-shadow: 0px 0px 30px rgb(192, 191, 191);
+}
+.login_button:active{
+    background-color:rgb(238, 133, 35);
+    box-shadow:none;
+}
+
+#login_nav{
+    display: block;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+#login_nav div{
+    margin: 10px;    
+    
+}
+#with_google{
+    display: inline-flex;
+    visibility: hidden;
+    border-radius: 50px;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 50px;
+    box-shadow: 0px 0px 40px rgb(192, 191, 191);
+}
+#with_google div:nth-child(2){
+    padding-top: 5px;
+    padding-left: 10px;
+    
+}
+
+#google_logo{
+    border: 0px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-image: url("/images/google\ logo.png");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: -8px -1px;
+    
+}
+
+#Login_input{
+    display: none;
+}
+
+
+.back-img{
+    width: 100%;
+
+
+}
+.back-img div{
+    border: 1px solid;
+}
+
+.row{
+    display: inline-flex;
+    width: 100%;
+}
+
+#title,#Vishesh_title,#OurServices{
+    color: #012478;
+    text-align: left;
+    font-family: "ProximaNova-700",sans-serif;
+    font-size: 54px!important;
+    line-height: 66px;
+}
+
+
+#title_bg{
+    border: 0px solid;
+    width: 50%;
+    height: 200px;
+    margin-top: 50px;
+    
+}
+.width{
+    width: 80%;
+    margin-left: 10%;
+}
+#image_girl{
+    height: 500px;
+    width: 550px;
+   margin-left: 100px;
+   animation-name: opa;
+   animation-duration: 5s;
+}
+#Vishesh_title{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #da5e0c;
+}
+
+.bg-color{
+    background-color: #012478;
+    height: 80px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation-name: opa;
+    animation-duration: 4s;
+}
+
+.width div{
+    border: 0px solid;
+    opacity: 1;
+    animation-name: opa;
+    animation-duration: 1s;
+}
+@keyframes opa {
+    from{opacity: 0;}
+}
+
+#OurServices{
+    margin-top: 0px; 
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px !important;
+    color: rgb(255, 255, 255);
+
+}
+.services{    
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #015d74;
+    padding-left: 300px;
+    border: 0px solid black !important;
+    margin: 5px;
+    /* background-color: #015d74; */
+    border: 2px solid #015d74 !important;
+    border-radius: 20px;
+
+    transition: 1s;
+    
+}
+
+.services:hover{
+    background-color: #015d74; 
+    border: none;
+    color: white;
+}
+
+.row div{
+    width: 50%;
+}
+
+.def{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.def div,.def_con{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;    
+    font-weight: 600;
+    text-align: center;
+    width: 50%;
+}
+.def div{
+border: 0px solid;    
+margin-top: 50px;
+color: #012478;
+}
+.def_con{
+    width: 100%;
+    font-size: 20px;    
+    font-weight: 100;
+    margin-top: 20px;
+}   
+
+.bg-color span{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}

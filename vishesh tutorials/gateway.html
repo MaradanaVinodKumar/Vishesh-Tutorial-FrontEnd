@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <script src="gateway.js"></script>
+
+    <!-- Collect.js is loaded -->
+    <script src="https://integratepayments.transactiongateway.com/token/Collect.js"
+        data-tokenization-key="5mN8N7-jhr55W-N22pxX-uAW2s9">
+        </script>
+    <link rel="stylesheet" href="gateway.css">
+
+<body>
+    <h2 class="pageTitle"><span>Lightbox Example</span></h2>
+
+    <form class="theForm">
+        <div class="formInner">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="First Name" name="fname" value="John" autofocus>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Last Name" name="lname" value="Smith">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Street Address" name="address1"
+                    value="123 Collect Js.">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="City" name="city" value="SAQ-A">
+            </div>
+            <div class="form-group">
+                <input type="state" class="form-control" placeholder="State" name="state" value="IL">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Zip code" name="zip" value="12345">
+            </div>
+        </div>
+
+        <input type="submit" id="payButton" value="Pay $56" class="btn btn-primary btn-block">
+
+    </form>
+
+    <div id="paymentTokenInfo"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+
+body{
+    overflow: hidden;
+}
+#sideBar{
+    border: 0px solid;
+    height: 923px;
+    overflow: hidden;
+    padding: 0px !important;
+   
+}
+
+#Iframe_body{
+    border:0px solid;
+    height: 923px;
+    overflow: hidden;
+    
+}
+#side_bar_bg{
+    border: 0px solid;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom left ,rgb(145, 26, 243),rgb(219, 191, 241));
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0px;
+    box-shadow:inset 0 0 40px rgb(79, 5, 122);
+    
+}
+.bar_options{
+    border: 0px solid;
+    height: 70px !important;
+    
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    cursor: pointer;
+    /* background-image: linear-gradient(to bottom left,rgb(129, 9, 226),rgb(171, 115, 216)); */
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-top: 19px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    
+}
+
+.bar_options:active{
+    opacity: 0.5;
+}
+/* .bar_options:nth-child(4){
+    box-shadow: 0 0 40px rgb(81, 8, 104);    
+} */
+
+#bar_options_bg{
+    padding: 0px;
+}
+
+#logo{
+    height: 150px;
+    border: 0px solid;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    color: white;
+    text-shadow: 0px 0px 20px rgb(76, 0, 92);
+}
+#Logout{
+    border: 0px solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-radius: 60px;
+    text-align: center;
+    padding: 0px;
+    padding-top: 15px;
+    opacity: 0.3;
+    background-color: rgb(235, 197, 247);
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#Logout:hover{
+    opacity: 1;
+    background-color: rgb(233, 169, 169);
+}
+
+#Profile_bg{
+    border: 0px solid;
+    height:100px;
+}
+
+/* #Profile_bg div{
+    border: 1px solid;    
+} */
+
+#Iframe_bg{
+    border: 0px solid;
+    height: 824px;
+    
+}
+#User_Name_bg,#User_Class_bg{
+    height: 50%;
+}
+
+#User_Class,#User_Name{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#User_Name{
+    font-size: 20px;
+    padding-top: 20px;
+}
+#User_Class{
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(112, 111, 111);
+}
+#Profile_photo_bg{
+    padding: 15px 23px;
+}
+#Profile_photo{
+    height: 100%;
+    border-radius: 60px;
+    border: 5px solid blueviolet;
+    background-image: url("images/boy.jpg");
+    background-size: 100%;
+    background-position: 0px -5px;
+    background-repeat: no-repeat;
+}
+
+#notfication{
+    font-size: 30px;
+    padding: 21px;
+}
+#optionName{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: blueviolet;
+    padding: 30px 90px;
+}
+#Iframe{
+    border: 0px solid;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bar_button_link{
+    text-decoration: none;
+}

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+body {
+
+  font-family: "Poppins", serif;
+  overflow: hidden;
+  /* background: #eeaeca; */
+  /* background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%); */
+}
+
+h1 {
+  font-weight: 800;
+  margin: 1rem 0 0;
+  margin-top: 0px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  list-style: none;
+}
+ul li {
+  display: flex;
+  /* width: 10rem;
+  height: 10rem; */
+  width: 130px;
+  height: 110px;
+  margin: 0.25rem;
+  flex-flow: column;
+  border-radius: 0.2rem;
+  /* padding: 1rem; */
+  font-weight: 300;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(218, 220, 240);
+    z-index: 1;
+}
+ul li time {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+ul .today {
+  background: #ffffff70;
+  background-color: rgb(245, 248, 202);
+}
+
+ul .today:hover{
+  background-color: rgb(223, 214, 163)
+}
+ul .today time {
+  font-weight: 800;
+}
+#week{
+  margin-bottom: 0;
+}
+.week_name{
+  
+  background-color: rgba(218, 178, 236, 0.356);
+  box-shadow: none;
+  color: rgb(141, 5, 146);
+  font-size: 20px;
+  padding: 0px;
+  height: 35px;
+  text-align: center;
+  font-weight: 600;
+  
+}
+.date{
+  
+font-size: 30px;
+font-weight: 600;
+font-family: Arial, Helvetica, sans-serif;
+border: 0px solid;
+text-align: center;
+height: 40px;
+}
+.Schedule_bg{
+  border: 0px solid black;
+  height: 69px;
+  font-size: 15px;
+  padding: 2px;
+  overflow: scroll;
+  overflow-x: hidden;
+  text-align: center;
+
+}
+.Schedule{
+
+    border: 0px solid;
+    margin: 4px;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: rgba(157, 240, 157, 0.555);
+    border-radius: 5px;
+    
+}
+.title{
+  position: absolute;
+  top: -70px;
+  left: -90px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(175, 173, 173);
+  width: 300px;
+  height: auto;
+  background-color: white;
+  transition:height 3s;
+  padding: 10px 0px;
+  display: none;
+ text-align: left;
+  padding-left: 20px;
+ 
+}
+
+.Schedule:hover{
+  background-color: rgb(248, 201, 201);
+}
+.Schedule:hover .title{
+  display: block;
+}
+/* 
+.Schedule[title]:hover::after{
+  content: attr(title);
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+} */
+
+.LiVisiblity{
+  visibility: hidden;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background-color: rgb(242, 209, 250); */
+  border-radius: 10px;
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(162, 0, 255); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c03535; 
+}
+#body{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.arrow_bg{
+  padding-top: 300px;
+  text-align: center;
+}
+#arrow-left,#arrow-right{
+  font-size: 30px;
+  cursor: pointer;
+}

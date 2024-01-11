@@ -1,0 +1,50 @@
+body{
+    overflow-x: hidden;
+}
+
+#sticky{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.box_head_bg{
+    border: 0px solid;
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+   
+  
+    
+}
+
+
+.box_head{
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 20px;
+    color:blueviolet;
+    font-weight: 500;
+    border-right: 2px solid ;
+    border-left: 2px solid ;
+    
+
+}
+.box_bg{
+    margin-top: 10px;
+    border: 0px solid;
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
+.box_bg:hover{
+    background-color: rgb(240, 235, 245);
+}
+.box{
+    font-size: 19px;
+    border: 0px solid;
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 102, 102);
+}

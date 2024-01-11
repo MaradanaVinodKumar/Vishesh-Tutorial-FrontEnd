@@ -1,0 +1,260 @@
+#backgroundImage{
+    border-radius: 20px;
+    border: 0px solid ;
+    width: 100%;
+    height: 400px;
+    background-image: url("/images/courcesBackground1.png"),linear-gradient(to right bottom,rgb(114, 116, 247),rgb(172, 178, 255),rgb(85, 100, 236),rgb(5, 41, 161),rgb(8, 14, 104));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.116);
+    box-shadow: 0px 0px 0px 0px rgba(187, 0, 194, 0.281);
+    margin-top: 10px;
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes  updown {
+    0%{box-shadow:inset 0px 0px 0px 0px rgba(187, 0, 194, 0.281);}
+    50%{box-shadow:inset 0px 0px 70px 10px rgba(37, 0, 71, 0.281);}
+    100%{box-shadow:inset 0px 0px 0px 0px rgba(187, 0, 194, 0.281);}
+}
+#coursesBody{
+    margin-top: 10px;
+    
+}
+.coursesItemBackground{
+    border: 0px solid rgb(0, 0, 0);
+    height: 240px;
+    padding: 5px;
+}
+.coursesItem,.coursesCartBackground{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(228, 229, 245);
+   transition: background-color 0.5s;
+   cursor: pointer;
+}
+.coursesItem:hover,.coursesCartBackground:hover{
+    outline-color: blue;
+    outline-width: 2px;
+    outline-style: solid;
+    box-shadow: none;
+   
+    background-color: rgb(255, 255, 255);
+}
+.coursesItem:active{
+    box-shadow: none;
+    outline: none;
+}
+
+.coursesTitle{
+    font-size: 18px;
+    font-weight: 700;
+}
+.coursesLanguage{
+    border: 0px solid;
+    padding: 2px 10px;
+    background-color: rgba(0, 0, 255, 0.616);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    float: right;
+}
+.coursesDetails{
+    border: 0px solid;
+    height: 130px;
+    margin-top: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    color: rgb(87, 86, 86);
+}
+.coursesFooter{
+    border: 0px solid;
+}
+.coursesButton{
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: rgb(241, 115, 241);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    float: right;
+}
+.coursesIcon{
+    color: rgb(116, 116, 240);
+}
+
+#courses{
+    padding-bottom: 50px;
+    display: block;
+}
+#coursesIndetails{
+    /* background-color: rgba(131, 17, 17, 0.486); */
+    display: block;
+}
+#coursesPath,#coursesCartPath{
+    font-size: 20px;
+    color: rgb(119, 119, 119);
+}
+#coursesTitle{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#coursePrice{
+    font-size: 25px;
+    font-weight: 600;
+    color: green;
+   
+}
+#priceCross{
+    text-decoration: line-through;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(160, 2, 2);
+}
+#RatingAndButtonsBackground{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(170, 37, 170);
+}
+.center{
+    text-align: center;
+}
+.text{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(41, 41, 41);
+}
+
+.start{
+    color: rgb(255, 217, 3);
+    font-size: 25px;
+}
+
+#Bay,#cart,#RemoveToCart,#ViewMore,.button{
+    border: 1px solid;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#Bay{
+    background-color: rgb(128, 0, 145);
+}
+#RemoveToCart{
+    background-color: rgb(145, 0, 7);
+}
+
+.button:active,#Bay:active,#cart:active,#RemoveToCart:active,#ViewMore:active{
+    padding: 2px 5px;
+    margin: 0 5px 0 5px;
+    opacity: 0.3;
+}
+
+.sideHeading{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.marginBottom{
+    margin-bottom: 25px;
+}
+
+#borderBottom{
+    padding-bottom: 45px;
+    border-bottom: 1px solid rgb(37, 39, 170);
+}
+.DemoVideoBackground{
+    border: 0px solid black;
+    height: 380px;
+    
+    border-radius: 20px;
+    padding: 10px;
+    background-image: linear-gradient(to top left,rgb(78, 13, 138),rgb(233, 160, 240));
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.685);
+    animation-name: scrollVideo;
+    animation-duration: 0.5s;
+    position: relative;
+    top:170px;
+}
+    
+@keyframes scrollVideo {
+    from{
+        top:-300px;
+    }
+    to{
+        top: 170px;
+    }
+}
+.demo{
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left:100px;
+}
+.Video{
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+#back,#backFromCart{
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#back:active,#backFromCart:active{
+    font-size: 29px;
+}
+#backFromCart{
+    position: fixed;
+    top: 0px;
+    right: 60px;
+}
+#cart{
+    position: relative;
+    top: 5px;
+    left: 1130px;
+    cursor: pointer;
+    border: 1px solid rgb(128, 0, 145);
+    background-color: rgb(128, 0, 145);
+}
+#coursesCart{
+    display: block;
+}
+#coursesCartBody{
+    padding: 0px 120px;
+    padding-bottom: 50px;
+
+}
+.coursesCartBackground{
+    border: 0px solid;
+    height: 210px;
+    background-color: "pink";
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: auto;
+    margin: 20px;
+}
+
+#ViewMore{
+    background-color: rgb(214, 4, 214);
+    border: none;
+    padding: 2px 5px;
+}

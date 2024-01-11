@@ -1,0 +1,27 @@
+#headers{
+    border: 0px solid;
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(213, 211, 214);
+}
+
+.head_box{
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid ;
+    color: blueviolet;
+}
+.box_bg{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: rgb(146, 146, 146);
+}
+.Paid{
+    padding: 1px 10px;
+    border: 1px solid;
+}

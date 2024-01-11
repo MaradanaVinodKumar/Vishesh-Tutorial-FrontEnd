@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="bar_Courses.css">
+    <link rel="stylesheet" href="scroll_bar.css">
+    <script src="bar_Courses.js"></script>
+</head>
+
+<body onload="coursesIndetails()">
+    <div class="container" id="coursesIndetails">
+        <div class="col-12"><a href="bar_Cart.html" target="_self" id="cart"><i class="fa-solid fa-box"></i> Courses Cart</a></div>
+        <div class="row">
+            <div class="col-7" id="coursesIndetailsBody">
+                <div id="coursesPath">
+                    Courses/ name of the courses
+                </div>
+                <div class="row">
+                    <div class="col-7" id="coursesTitle">
+                        Name of the courses
+                    </div>
+                </div>
+                <div><i class="fa fa-language" aria-hidden="true"></i> <span id="language"></span></div>
+                <div class="col-12 center" id="RatingAndButtonsBackground">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="row ">
+                                <div class="col-12 text">Course Rating</div>
+                                <div class="col-12" id="Rating"><i class="fa fa-star start" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" style="border-left: 1px solid black;border-right: 1px solid black;">
+                            <div class="row">
+                                <div class="col-12 text">Active Learners</div>
+                                <div class="col-12 "><i class="coursesIcon fa fa-group" aria-hidden="true"></i> <span
+                                        id="ActiveLearners">54545</span> </div>
+
+                            </div>
+                        </div>
+                        <div class="col-5 ">
+                            <div>
+                                <div class="col-12 ">
+                                   <span class="text"> Price : <i class="fa fa-rupee" aria-hidden="true"></i>. </span> <span id="coursePrice">-/1200 </span><span id="priceCross"> -/2900. </span>
+                                </div>
+                                <div class="col-12 ">
+                                    <span id="AddToCart"><button class="button">Add to Cart</button></span>
+                                    <button id="Bay">Buy</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sideHeading">
+                    What’s included in this Course
+                </div>
+                <div class="row marginBottom">
+                    <div class="col-6 text "><i class="fa fa-play " aria-hidden="true"></i> 21+ hours of on-demand video
+                    </div>
+                    <div class="col-6 text "><i class="fa fa-download" aria-hidden="true"></i> Downloadable Resources
+                    </div>
+                </div>
+                <div class="row marginBottom">
+                    <div class="col-6 text"><i class="fa fa-ticket" aria-hidden="true"></i> Articles</div>
+                    <div class="col-6 text"><i class="fa fa-tv" aria-hidden="true"></i> Access on Mobile and TV</div>
+                </div>
+                <div class="row marginBottom" id="borderBottom">
+                    <div class="col-6 text"><i class="fa fa-laptop" aria-hidden="true"></i> Exercise</div>
+                    <div class="col-6 text"><i class="fa fa-refresh" aria-hidden="true"></i> Life Time Access</div>
+                </div>
+
+                <div class="sideHeading">
+                    Course Details
+                </div>
+                <div id="Details" class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid non consequatur cupiditate
+                    blanditiis ipsam ipsa fugit ab ad a. Recusandae non inventore a sed voluptates ut accusantium sequi
+                    cupiditate soluta?
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div><span id="back"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</span></div>
+                <div class="DemoVideoBackground">
+                    <div class=" demo">
+                        Demo Video
+                    </div>
+                    <div>
+                        <video src="" class="Video" controls loop>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

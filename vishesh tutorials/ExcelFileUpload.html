@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loads()">
+    <div style="border: 0px solid black;height: 20px;text-align: center;margin-top: 50px;">
+        <form action="" enctype="multipart/form-data">
+        <input type="file" style="font-size: 30px;" id="ExcelFile">
+        </form>
+    </div>
+
+    <script>
+
+        function loads(){
+
+        document.getElementById('ExcelFile').addEventListener("change",(e)=>{
+            e.preventDefault();
+            const file=document.getElementById('ExcelFile').files[0];
+            const formData=new FormData();
+             formData.append('ExcelFile',file);
+             fetch("http://localhost:8081/v1/student/upploadExcelFile", {
+            method: 'POST',
+            body: formData,
+            // headers: {'Content-Type': 'multipart/form-data'}
+        })
+        .then((res)=>{console.log(res);
+
+            if(res.status==200)
+            {
+                alert("Data uploaded");
+                
+            }
+            else{
+                alert("Data has not uploaded");
+            }
+
+            })
+        .catch((error)=>{console.log(error);alert("Data has not uploaded error")})
+        });
+        }
+    </script>
+</body>
+</html>

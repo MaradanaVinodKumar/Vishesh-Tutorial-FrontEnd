@@ -1,0 +1,17 @@
+.header{
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    font-weight: 550;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.box_bg{
+    padding: 20px;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    font-size: 20px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(116, 116, 115);
+}

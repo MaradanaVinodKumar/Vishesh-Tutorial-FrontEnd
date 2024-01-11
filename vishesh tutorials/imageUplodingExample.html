@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function loads(){
+        const form = document.getElementById('uploadForm');
+        const imageInput = document.getElementById('imageInput');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const file = imageInput.files[0];
+            const reader = new FileReader();
+
+            reader.onload = () => {
+                const byteArray = new Uint8Array(reader.result);
+
+                fetch('http://localhost:8081/addImage/', {
+                    method: 'POST',
+                    body: byteArray,
+                    headers: {
+                        'Content-Type': 'image/jpeg' // or image/png, etc.
+                    }
+                })
+                    .then(response => response.json())
+                    .then(data => console.log(data))
+                    .catch(error => console.error(error));
+            };
+
+            reader.readAsArrayBuffer(file);
+        });}
+    </script>
+</head>
+
+<body onload="loads()">
+    <form enctype="multipart/form-data" method="POST">
+        <input type="file" name="file" id="imageInput">
+        <button type="submit">Upload Image</button>
+    </form>
+    
+</body>
+
+</html>

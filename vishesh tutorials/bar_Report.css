@@ -1,0 +1,43 @@
+body{
+padding-top: 40px;    
+padding-bottom: 500px;
+}
+.box_bg{
+    border: 0px solid;
+    margin-top: 30px;
+}
+.box{
+    border: 0px solid;
+    height: 250px;
+    border-radius: 20px;
+    padding: 5px 20px ;
+    box-shadow: 0 0 15px rgb(173, 173, 173);
+    overflow: hidden;
+}
+.box:hover{
+    background-color: rgb(243, 238, 247);
+}
+.head_name{
+    text-align: right;
+    height:50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+
+}
+.Rank_name{
+    color: rgb(86, 187, 86);
+    font-size: 17px;
+}
+.subject_bg{
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(209, 208, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}

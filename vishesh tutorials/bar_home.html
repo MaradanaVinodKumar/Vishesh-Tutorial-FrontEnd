@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bar_home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scroll_bar.css">
+    <script src="bar_home.js"></script>
+</head>
+<body onload="studentDetails(localStorage.getItem('userName'))">
+    <div class="container-flued">
+        <div class="row" id="profile_bg">
+            <div class="col-12" id="welcome_profile_bg">
+                <div class="row" >
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-12" id="date">
+                                September 4, 2023
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" id="welcome_name">
+                                Welcome back, Vinod!
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" id="welcome_name_title">
+                                Education is the most powerful weapon you can use to change the world.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5" id="boy-Photo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" >
+            <div class="row">
+                <div class="col-9" >
+                    <div class="row">
+                        <div class="col-12" id="your-courses">
+                            your courses
+                        </div>
+                    </div>
+                    <div class="row courses_bg" >
+                        <div class="col-5 courses" >
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4" style="padding: 14px 20px;">
+                                    <div class="col-12 course_logo" id="Maths">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="col-12 course_name">Maths</div>
+                                    <div class="col-12 course_persiontage">
+                                        <div class="row">
+                                            <div class="col-8 persentage_bg">
+                                                <div class="persentage" style="width: 20%;"></div>
+                                            </div>
+                                            <div class="col-2">20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 course_valied">Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 courses" >
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4" style="padding: 14px 20px;">
+                                    <div class="col-12 course_logo" id="science">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="col-12 course_name">Science</div>
+                                    <div class="col-12 course_persiontage">
+                                        <div class="row">
+                                            <div class="col-8 persentage_bg">
+                                                <div class="persentage" style="width: 75%;"></div>
+                                            </div>
+                                            <div class="col-2">75%</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 course_valied">Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row courses_bg">
+                        <div class="col-5 courses" >
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4" style="padding: 14px 20px;">
+                                    <div class="col-12 course_logo" id="social">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="col-12 course_name">Social</div>
+                                    <div class="col-12 course_persiontage">
+                                        <div class="row">
+                                            <div class="col-8 persentage_bg">
+                                                <div class="persentage" style="width: 30%;"></div>
+                                            </div>
+                                            <div class="col-2">30%</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 course_valied">Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 courses" >
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4" style="padding: 14px 20px;">
+                                    <div class="col-12 course_logo" id="english">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="col-12 course_name">English</div>
+                                    <div class="col-12 course_persiontage">
+                                        <div class="row">
+                                            <div class="col-8 persentage_bg">
+                                                <div class="persentage" style="width: 50%;"></div>
+                                            </div>
+                                            <div class="col-2">50%</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 course_valied">Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" id="schedule_bg">
+                   
+                
+                    <div class="col-12" id="schedule">
+                        <div class="container-flued">
+                        <div id="To-day">Today</div>
+                        <div id="SCHEDULE">SCHEDULE</div>
+                        <div id="SCHEDULES">
+                            <div class="row">
+                        <div class="col-12 timings">08:00 - 09:00 <span class="timing_name">Social</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">09:00 - 10:00 <span class="timing_name">Science</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">10:00 - 12:00 <span class="timing_name">English</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">13:00 - 15:00 <span class="timing_name">Maths</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">15:00 - 17:00 <span class="timing_name">English</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">18:00 - 19:00 <span class="timing_name">Science</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">19:00 - 20:00 <span class="timing_name">Social</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">20:00 - 21:00 <span class="timing_name">Maths</span></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 timings">21:00 - 21:30 <span class="timing_name">English</span></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                </div>
+            </div>
+    </div>
+   
+
+
+
+
+</body>
+</html>

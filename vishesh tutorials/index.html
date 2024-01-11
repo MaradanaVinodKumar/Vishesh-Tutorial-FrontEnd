@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js"></script>
+</head>
+<body onload="load()">
+    <section>
+        <!-- <div id="bar_bg"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
+        <div id="name_bg">Vishesh Tutorial</div>
+        <!-- <div id="search-bg"><div><input type="text" placeholder="Search..." > <i class="fa fa-search" aria-hidden="true"></i> </div></div> -->
+        <div id="notification_bg"> <i class="fa fa-bell" aria-hidden="true"></i></div>
+        <div id="dot_bar_bg"><i class="fa fa-ellipsis-v" aria-hidden="true" id="dots"></i></div>
+
+        <div id="dot_bar_items_back">
+            <div id="dot_bar_items">
+                <div id="home">Home</div>
+                <div id="login">Login</div>
+                <div id="selfRegistration">Self Registration</div>
+            </div>
+        </div>
+     
+    </section>
+    
+    
+    <section id="section2">
+        <div id="section2_bg">
+        <div id="leftImage">
+
+        </div>
+
+        <div id="body_bg"> 
+           
+            
+            <div id="Wellcome">
+                <div class=" head_name" >Welcome To Vishesh Tutorial</div>
+                <div class="Login_input_bg" id="logo"></div>
+            </div>
+
+            <div id="Login">
+                <form action="" onsubmit="return loginDetatilsValidation()">
+                    <div class="head_name">Login</div>
+                    <div id="para2"></div>
+
+                    
+                    <!-- <div class="Login_input_bg" style="margin-right: 20px;">-------------- or --------------</div> -->
+                    <!-- <div class="Login_input_bg" >use otp</div> -->
+                    <div class="Login_input_bg" id="back_to_password_login"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</div>
+                    <div class="Login_input_bg" id="back_to_password_nav"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</div>
+                    <div id="Login_input">
+                    <div class="Login_input_bg" id="login_phone">
+                      <i class="fa fa-user" aria-hidden="true"></i> User Name 
+                    </div>
+                    <div class="Login_input_bg">
+                        <input type="text" placeholder="91*****/xxx@x.xxx" id="userType" onchange="loginValidation()">
+                    </div>
+                    </div>
+
+                    <div id="login_nav">  
+                        <div class="Login_input_bg" ><div id="with_google"><div id="google_logo"></div><div>Continue with Google</div></div></div>
+                        <div class="Login_input_bg" ><button class="login_button" type="button" id="useotp">Login With OTP</button></div>
+                        <div class="Login_input_bg">-------------- or --------------</div>
+                        <div class="Login_input_bg" ><button class="login_button" type="button" id="usePassword" >Login With Password</button></div>
+                    </div>
+
+
+                    <div id="login_type_password">
+                        <div class="Login_input_bg" id="password_name">
+                        <i class="fa fa-key" aria-hidden="true"></i> Password
+                        </div >
+                        <div class="Login_input_bg">
+                            <input type="password" placeholder="password" id="login_password">
+                        </div>
+                        <div class="Login_input_bg">
+                            <span id="forgetPassword">Forgot password?</span>
+                        </div>
+                        <div class="Login_input_bg">
+                            <button  type="submit" id="login_submit">Login</button>
+                        </div>
+                        <div class="Login_input_bg" id="new_user">New user ? <span id="login_to_register"> Register</span></div>
+                    </div>
+                    
+                    <div id="login_type_otp">
+
+                        <div class="Login_input_bg" id="login_send_otp_bg">
+                            <span id="login_send_otp">send otp</span>
+                        </div>
+
+                        <div id="refreshThree" class="Login_input_bg" >
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </div>
+                        <div class="Login_input_bg" id="otpStatus"></div>
+                        <div id="Login_otp">
+                        <div class="Login_input_bg" id="login_otp">
+                            <input   size="1" maxlength="1" class="otp" id="loginOtpDigitOne" autocomplete="off" type="text"><!--id="otpOne"-->
+                            <input   size="1" maxlength="1" class="otp" id="loginOtpDigitTwo" autocomplete="off" type="text">
+                            <input   size="1" maxlength="1" class="otp" id="loginOtpDigitThree" autocomplete="off" type="text">
+                            <input   size="1" maxlength="1" class="otp" id="loginOtpDigitFour" autocomplete="off" type="text">
+                            <span id="otpConformLogin"></span>
+                        </div>
+                        <!-- <div class="Login_input_bg"  id="loginOtpTimer">
+                            <span>10:00</span>
+                        </div> -->
+                        <div class="Login_input_bg" id="loginOtpTimer_bg" >
+                            <span id="loginOtpTimer"></span>
+                        </div>
+
+                        </div>
+                        <div class="Login_input_bg" id="resend">
+                            <span id="resendOtp">Resend Otp</span>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+
+            <div id="Registration">
+                <form action="" onsubmit="return postDetails()">
+                    <div class="head_name">Self Registration</div>
+                    <div id="para"></div>
+                    <div class="input_bg" id="first_bg"><i class="fa fa-user" aria-hidden="true"></i> <label for="">First Name :</label> <input type="text" placeholder="first name.."  id="firstName" required >  <i class="fa fa-user" aria-hidden="true" for="lastName"></i> <label >Last Name :</label> <input type="text" placeholder="last name" required id="lastName"></div>
+                    <div class="input_bg" ><i class="fa fa-book" aria-hidden="true"></i> <label for="">Class Name : </label><input type="text" placeholder="Class..."  required id="className"><i class="fa fa-building" aria-hidden="true" name="School"></i> <label for="">School Name : </label> <input type="text" placeholder="School name" required id="schoolName"></div>
+                    <div class="input_bg" id="phone_bg">
+                        <div id="phone_bg_div_one">
+                        <i class="fa fa-phone" aria-hidden="true"></i> <label for="">Phone Number : </label><input type="phone" placeholder="91********"  maxlength="10" required id="phoneNumber" onchange="validatePhoneNumber()">
+                        </div>
+                        <div id="phoneDiv" >
+                            <div style="display: inline-flex ;width: 78%;"> 
+                            <div style="width: 20%">
+                                <span> <button  id="otpSendOne" type="button">send OTP</button></span><!--<i id="refreshOne" class="fa fa-refresh" aria-hidden="true"></i>-->
+                            </div>
+                            
+                        <div id="refreshOne">
+                            <i class="fa fa-refresh" id="SymOne" aria-hidden="true"></i>
+                        </div>
+
+                        <div id="PhoneOtpStatus">
+
+                        </div>
+
+                        <div id="phoneOtpInput">
+                                <input   size="1" maxlength="1" class="otp" id="phoneOtpDigitOne" autocomplete="off" type="text"><!--id="otpOne"-->
+                                <input   size="1" maxlength="1" class="otp" id="phoneOtpDigitTwo" autocomplete="off" type="text">
+                                <input   size="1" maxlength="1" class="otp" id="phoneOtpDigitThree" autocomplete="off" type="text">
+                                <input   size="1" maxlength="1" class="otp" id="phoneOtpDigitFour" autocomplete="off" type="text">
+                                
+                            </div>
+                            <span id="otpConformOne"></span>
+                            </div>
+                         </div>
+                     </div>
+                    <div class="input_bg timer_bg">
+                        <!--Resend Otp-->
+                        <span id="phoneOtpTimer"></span>
+                    </div>
+                    <div class="input_bg" id="email_bg">
+                        <div id="email_bg_div_one">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> <label for="">E-mail Id : </label> <input type="email" placeholder="xxxxx@.com" required  id="emailId" onchange="validateEmailId()">
+                        </div>
+                        <div id="emailDiv">
+                            <div style="display: inline-flex ;width: 78%;">
+                            <div  style="width: 20%">
+                                <span> <button id="otpSendTwo" type="button">send OTP</button></span><!--<i id="refreshTwo" class="fa fa-refresh" aria-hidden="true"></i>-->
+                            </div>
+
+                            <div id="refreshTwo">
+                                <i class="fa fa-refresh" aria-hidden="true"></i>
+                            </div>
+                            <div id="EmailOtpStatus">
+
+                            </div>
+                            <div  id="emailOtpInput">
+                                <input   size="1" maxlength="1" class="otp" id="emailOtpDigitOne" autocomplete="off" type="text"><!--id="otpOne"-->
+                                <input   size="1" maxlength="1" class="otp" id="emailOtpDigitTwo" autocomplete="off" type="text">
+                                <input   size="1" maxlength="1" class="otp" id="emailOtpDigitThree" autocomplete="off" type="text">
+                                <input   size="1" maxlength="1" class="otp" id="emailOtpDigitFour" autocomplete="off" type="text">
+                                
+                            </div>
+                            <span id="otpConformTwo"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_bg timer_bg">
+                        <!--Resend Otp-->
+                        <span id="emailOtpTimer"></span>
+                    </div>
+
+                    <div class="input_bg" id="passwordIn">
+                        <i class="fa fa-user" aria-hidden="true"></i> Password : <input type="password" placeholder="password.." id="new_password" required>  <i class="fa fa-key" aria-hidden="true" id="confirm"></i> Confirm password : <input type="password" placeholder="Confirm password" id="con_password" required>
+                    </div>
+
+                    <div class="input_bg" id="button_bg" ><button type="submit">Sign up</button></div>
+                </form>
+                
+            </div>
+
+            <!-- <div id="password">
+                    <form action="" onsubmit="return postDetailsForPasswords()">
+                        <div class="head_name">creat password</div>
+                        <div id="para3"></div>
+                        <div class="Login_input_bg" id="newPassword">
+                          <i class="fa fa-user" aria-hidden="true"></i> New password
+                        </div>
+                        <div class="Login_input_bg">
+                            <input type="text" placeholder="password.." id="new_password" required>
+                        </div>
+    
+                        
+                        <div class="Login_input_bg" id="confirmPassword" >
+                        <i class="fa fa-key" aria-hidden="true"></i>Confirm password
+                        </div >
+
+                        <div class="Login_input_bg">
+                            <input type="password" placeholder="Confirm password" id="con_password" required>
+                        </div>
+
+                        <div class="Login_input_bg">
+                            <button  type="submit" id="password_submit">Submit</button>
+                        </div>
+                                      
+    
+                    </form>
+                
+            </div> -->
+
+            <div id="change_Password">
+                <form action="" onsubmit="return postDetailsForNewPasswords()">
+                    <div class="head_name">Change Password</div>
+                    <div id="para4"></div>
+                    <div class="Login_input_bg" id="newPassword_login">
+                      <i class="fa fa-user" aria-hidden="true"></i> New password
+                    </div>
+                    <div class="Login_input_bg">
+                        <input type="password" placeholder="password.." id="new_password_login" required>
+                    </div>
+
+                    
+                    <div class="Login_input_bg" id="confirmPassword_login" >
+                    <i class="fa fa-key" aria-hidden="true"></i>Confirm password
+                    </div >
+
+                    <div class="Login_input_bg">
+                        <input type="password" placeholder="Confirm password" id="con_password_login" required>
+                    </div>
+
+                    <div class="Login_input_bg">
+                        <button  type="submit" id="password_submit_login">Change</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div id="mask">
+
+        </div>
+    </div>
+    </section>
+
+    <section id="home_content">
+    
+            <!-- <div id="image_bg"></div> 
+            <div id="content">
+                
+                <h1>Welcome to Vishesh Tutorial</h1>
+
+                Vishesh Tutorial Center is a premier educational institution that provides quality Tutorial for students of all ages. We are committed to providing our students with the best possible education in a supportive and nurturing environment.
+
+                <h1>Our Mission</h1>
+
+                Our mission at Vishesh Tutorial Center is to help students reach their full potential. We believe that every student has the ability to succeed, and we are dedicated to providing them with the tools and resources they need to achieve their goals.
+
+                <h1>Our Services</h1>
+
+                We offer a wide range of Tutorial services, including:
+                <ul>
+                    <li>One-on-one tutoring</li>
+                    <li>Small group tutoring</li>
+                    <li>Subject-specific tutoring</li>
+                    <li>Exam preparation tutoring</li>
+                    <li>Homework help</li>
+                    <li>Our Tutors</li>
+                </ul>
+                
+            </div> -->
+
+            <div class="width">
+            <div class="back-img">
+                <div class="row">
+                    <div class="col-1" id="title_bg">
+                        <div id="Vishesh_title">fostering intellect</div>
+                        <h1 id="title"> Master Any Subject with Our Expert Instructors</h1>
+                        <!-- Learn Any Course for <span> Free </span> in your own Language -->
+        
+                    </div>
+                    <div class="col-l">
+                        <img src="https://www.learnvern.com/images/new-home-assets/home-desktop-banner.png" alt="Hero Banner Image" id="image_girl">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="bg-color">
+                <div id="OurServices">Our Services</div>
+            </div>
+
+            <div class="width" style="margin-top: 60px;">
+               
+                 <div class="row">
+                    <div class="services"> One-on-one tutoring</div>
+                    <div class="services"> Small group tutoring</div>
+                 </div>
+                 <div class="row">
+                    <div class="services"> Subject-specific tutoring</div>
+                    <div class="services"> Exam preparation tutoring</div>
+                 </div>
+                 <div class="row">
+                    <div class="services"> Homework help</div>
+                    <div class="services"> Our Tutors</div>
+                 </div>
+            </div>
+            <div class="bg-color" style="height: 40px;margin-top: 100px;margin-bottom: 0px;background-color: rgb(182, 124, 37);"><span> Benefits </span></div>
+            <div class="width">
+                <div class="def"><div>Personalised attention </div></div>
+                <div class="def_con">Vishesh Tutorials offers one-on-one tutoring to ensure that each student receives the attention they need to succeed.</div>
+                <div class="def"><div>Customized learning plans </div></div>
+                <div class="def_con"> Each student's learning plan is customized to their individual needs and goals.</div>
+                <div class="def"><div>Tailored instruction</div></div>
+                <div class="def_con"> Vishesh Tutorials' tutors use a variety of teaching methods to ensure that each student learns effectively.</div>
+                <div class="def"><div>Bridging gaps</div></div>
+                <div class="def_con"> One-on-one tutoring can help to identify and address any gaps in a student's understanding.</div>
+                <div class="def"><div>Transforming confusion into clarity</div></div>
+                <div class="def_con"> Vishesh Tutorials' tutors are experts at breaking down complex concepts into easy-to-understand terms.</div>
+                <div class="def"><div>Access to experienced and knowledgeable subject experts</div></div>
+                <div class="def_con">One-on-one tutoring provides students with access to experienced and knowledgeable subject experts who can impart their expertise and passion for the subject matter. This exposure to experienced tutors can inspire students and broaden their understanding of the subject.</div>
+                 
+            </div>
+
+            <div class="bg-color" style="height: 50px;margin-top: 50px;margin-bottom: 0px;"></div>
+    </section>
+</body>
+</html>
